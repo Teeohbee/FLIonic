@@ -28,6 +28,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'homeCtrl'
   })
 
+  .state('new', {
+    url: '/new',
+    templateUrl: 'templates/new.html',
+    controller: 'newCtrl'
+  })
+
   $urlRouterProvider.otherwise('/')
 
 })
