@@ -1,0 +1,49 @@
+var professions = [{
+  'name': 'Priest',
+  'charisma': 4,
+  'combat': 2,
+  'magic': 3,
+  'sanctity': 6,
+  'scouting': 4,
+  'thievery': 2
+}, {
+  'name': 'Mage',
+  'charisma': 2,
+  'combat': 2,
+  'magic': 6,
+  'sanctity': 1,
+  'scouting': 5,
+  'thievery': 3
+}, {
+  'name': 'Rogue',
+  'charisma': 5,
+  'combat': 5,
+  'magic': 4,
+  'sanctity': 1,
+  'scouting': 2,
+  'thievery': 6
+}, {
+  'name': 'Troubadour',
+  'charisma': 6,
+  'combat': 3,
+  'magic': 4,
+  'sanctity': 3,
+  'scouting': 2,
+  'thievery': 4
+}, {
+  'name': 'Warrior',
+  'charisma': 3,
+  'combat': 6,
+  'magic': 2,
+  'sanctity': 4,
+  'scouting': 3,
+  'thievery': 2
+}, {
+  'name': 'Wayfarer',
+  'charisma': 2,
+  'combat': 5,
+  'magic': 2,
+  'sanctity': 3,
+  'scouting': 6,
+  'thievery': 4
+}]
