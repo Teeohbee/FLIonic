@@ -8,55 +8,51 @@
         <div class="input-label">
           Profession
         </div>
-        <select ng-model="professionSelect">
-          <option>Priest</option>
-          <option>Mage</option>
-          <option>Rogue</option>
-          <option>Troubadour</option>
-          <option>Warrior</option>
-          <option>Wayfarer</option>
+        <select ng-options="profession.name for profession in professions" ng-model="professionSelect" ng-change="change(professionSelect)">
         </select>
       </label>
     </div>
-    <div class="list">
+
+
+    <div class="list" ng-model="selectedProfession">
       <a class="item item-icon-left" href="#">
         <i class="icon icon-beams-aura"></i> Charisma
         <span class="badge badge-positive">
-          4
+          {{selectedProfession.charisma}}
         </span>
       </a>
       <a class="item item-icon-left" href="#">
         <i class="icon icon-crossed-swords"></i> Combat
         <span class="badge badge-positive">
-          2
+          {{selectedProfession.combat}}
         </span>
       </a>
       <a class="item item-icon-left" href="#">
         <i class="icon icon-magic-palm"></i> Magic
         <span class="badge badge-positive">
-          3
+          {{selectedProfession.magic}}
         </span>
       </a>
       <a class="item item-icon-left" href="#">
         <i class="icon icon-jeweled-chalice"></i> Sanctity
         <span class="badge badge-positive">
-          6
+          {{selectedProfession.sanctity}}
         </span>
       </a>
       <a class="item item-icon-left" href="#">
         <i class="icon icon-walking-boot"></i> Scouting
         <span class="badge badge-positive">
-          4
+          {{selectedProfession.scouting}}
         </span>
       </a>
       <a class="item item-icon-left" href="#">
         <i class="icon icon-skeleton-key"></i> Thievery
         <span class="badge badge-positive">
-          2
+          {{selectedProfession.thievery}}
         </span>
       </a>
     </div>
-    <button class="button button-block button-positive">
+    <button class="button button-block button-positive" ng-click="createChar(selectedProfession)">
       Create
     </button>
   </ion-content>

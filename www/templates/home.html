@@ -1,8 +1,11 @@
 <ion-view view-title="Home">
   <ion-content>
     <h1>Welcome to the Fabled Lands Companion App</h1>
-    <button class="button button-block button-positive" ui-sref="new">
+    <button ng-if="character" class="button button-block button-positive" ui-sref="new">
       New Character
+    </button>
+    <button ng-if="character" class="button button-block button-positive" ng-click="deleteChar()">
+      Delete character
     </button>
   </ion-content>
 </ion-view>

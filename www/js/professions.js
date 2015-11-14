@@ -46,4 +46,4 @@ var professions = [{
   'sanctity': 3,
   'scouting': 6,
   'thievery': 4
-}]
+}];
