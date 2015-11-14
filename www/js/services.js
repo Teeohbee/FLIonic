@@ -16,6 +16,9 @@ angular.module('starter.services', [])
     },
     destroyObject: function(key) {
       return localStorage.removeItem(key);
+    },
+    clearStorage: function(key) {
+      $window.localStorage.clear();
     }
   }
 }]);

@@ -5,8 +5,8 @@ app.controller('homeCtrl', function($scope, $localstorage, $state) {
   console.log($scope.character);
 
   $scope.deleteChar = function() {
-    $localstorage.destroyObject('charAbilities');
-    $state.go('home');
+    $localstorage.clearStorage();
+    console.log($scope.character);
   };
 });
 
