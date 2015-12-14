@@ -22,8 +22,9 @@ app.controller('newCtrl', function($scope, $localstorage, $state) {
     $scope.selectedProfession = selection
   };
 
-  $scope.createChar = function(profession) {
+  $scope.createChar = function(profession, charName) {
     $localstorage.setObject('charAbilities', profession);
+    $localstorage.setObject('charName', charName)
     $state.go('home');
   };
 
