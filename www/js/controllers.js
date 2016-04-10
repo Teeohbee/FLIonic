@@ -7,9 +7,7 @@ app.controller('homeCtrl', function($scope, $localstorage, $state) {
   $scope.deleteChar = function() {
     $localstorage.clearStorage();
     console.log($scope.character);
-    $state.go($state.current, {}, {
-      reload: true
-    });
+    $state.go('new');
   };
 });
 
